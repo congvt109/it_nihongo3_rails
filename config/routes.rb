@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :book_reviews
   root to: 'static_pages#home'
   devise_scope :user do
     get '/users/sign_out' => 'devise/sessions#destroy'
